@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eat</title>
+    <style type="text/css">
+        body {
+            /*background-color: #ccc;*/
+            background: url("eat.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*opacity: 0.5;*/
+            /*background-color: red;*/
+        }
+        .eat {
+            position: absolute;
+            top:50%;
+            margin-top: -300px;
+            width: 100%;
+            height: 600px;
+        }
+        
+        .wrap {
+            width: 800px;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            margin-left: -400px;
+        }
+
+        #res {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            margin-left: -400px;
+            font-size: 50px;
+            text-shadow: 5px 5px 5px #ccc;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            color:lightgreen;
+        }
+        #can1 {
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: 350px;
+            left: 50%;
+            margin-left: -100px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: skyblue;
+            font-size: 26px;
+            text-shadow: 2px 2px 2px red;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            box-shadow: 2px 2px 2px #ccc;
+            color: white;
+        }
+    </style>
+    <script src="eat.js"></script>
+</head>
+<body onselelctstart="return false;">
+    <div class="eat">
+        <div class="wrap">
+            <p id="res"></p>
+            <input type="button" value="今天吃啥呀" id="can1" onclick="onClick(this)">
+            <!-- <div id="can1">今天吃啥呀</div> -->
+        </div>
+    </div>
+</body>
+</html>
